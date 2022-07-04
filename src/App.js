@@ -1,21 +1,35 @@
-import React from "react"
-import "./App.css"
-import Header from "./components/header/Header"
-import Booking from "./components/booking/Booking"
-import Steps from "./components/service steps/Steps"
-import Service from "./components/special services/Service"
-import Footer from "./components/footer/Footer"
+import React from "react";
+import './index.css';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Booking />
-      <Steps />
-      <Service />
-      <Footer />
-    </div>
-  )
-}
 
-export default App
+import Homepage from './components/Homepage';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Checkout from "./components/Checkout";
+import Header from "./components/Header";
+
+// import Service from './components/Service';
+// import Contact from './components/Contact';
+// import Login from './components/Login';
+
+
+ 
+const App=()=> {
+  
+  return ( 
+    <Router>
+        <div>
+          <Header />
+          <Routes>
+            <Route path="/" exact strict element={<Homepage />} />
+            <Route path="/checkout" exact strict element={<Checkout />} />
+           {/* <Route path="/services" exact strict component={Service} /> */}
+           {/* <Route path="/contact" exact strict component={Contact}/> */}
+           {/* <Route path="/login" exact strict component={Login}/> */}
+          </Routes>
+         </div>
+   </Router>    
+  );
+} 
+
+export default App;
+
