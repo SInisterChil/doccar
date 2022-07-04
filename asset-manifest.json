@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/doccar/static/css/main.e18abca6.chunk.css",
+    "main.js": "/doccar/static/js/main.3d7a4a5a.chunk.js",
+    "main.js.map": "/doccar/static/js/main.3d7a4a5a.chunk.js.map",
+    "runtime-main.js": "/doccar/static/js/runtime-main.e422fd4f.js",
+    "runtime-main.js.map": "/doccar/static/js/runtime-main.e422fd4f.js.map",
+    "static/css/2.68a81a89.chunk.css": "/doccar/static/css/2.68a81a89.chunk.css",
+    "static/js/2.c62fdd5c.chunk.js": "/doccar/static/js/2.c62fdd5c.chunk.js",
+    "static/js/2.c62fdd5c.chunk.js.map": "/doccar/static/js/2.c62fdd5c.chunk.js.map",
+    "static/js/3.cfa287f7.chunk.js": "/doccar/static/js/3.cfa287f7.chunk.js",
+    "static/js/3.cfa287f7.chunk.js.map": "/doccar/static/js/3.cfa287f7.chunk.js.map",
+    "index.html": "/doccar/index.html",
+    "precache-manifest.ce0f4952dcb801e376e87acd649b7ebd.js": "/doccar/precache-manifest.ce0f4952dcb801e376e87acd649b7ebd.js",
+    "service-worker.js": "/doccar/service-worker.js",
+    "static/css/2.68a81a89.chunk.css.map": "/doccar/static/css/2.68a81a89.chunk.css.map",
+    "static/css/main.e18abca6.chunk.css.map": "/doccar/static/css/main.e18abca6.chunk.css.map",
+    "static/js/2.c62fdd5c.chunk.js.LICENSE.txt": "/doccar/static/js/2.c62fdd5c.chunk.js.LICENSE.txt",
+    "static/media/drumBrakeTuning.png": "/doccar/static/media/drumBrakeTuning.f63b921d.png",
+    "static/media/frontBrakeDisk.png": "/doccar/static/media/frontBrakeDisk.80e2e6f1.png",
+    "static/media/radiatorFlushClean.png": "/doccar/static/media/radiatorFlushClean.9bf7bf1f.png",
+    "static/media/radiatorReplace.png": "/doccar/static/media/radiatorReplace.ba6cbcd7.png",
+    "static/media/sPBasic.png": "/doccar/static/media/sPBasic.5e8923b6.png",
+    "static/media/sPComprehensive.png": "/doccar/static/media/sPComprehensive.ba6cbcd7.png",
+    "static/media/sPStandard.png": "/doccar/static/media/sPStandard.4b13d93a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e422fd4f.js",
+    "static/css/2.68a81a89.chunk.css",
+    "static/js/2.c62fdd5c.chunk.js",
+    "static/css/main.e18abca6.chunk.css",
+    "static/js/main.3d7a4a5a.chunk.js"
+  ]
+}
