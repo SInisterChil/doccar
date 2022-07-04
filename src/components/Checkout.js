@@ -1,4 +1,4 @@
-import { faPencil, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
+import { faPencil, faMapMarkerAlt, faCheckCircle, faCheck } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React, { memo, useEffect, useState } from "react"
 import { useSelector } from "react-redux"
@@ -33,7 +33,11 @@ const Checkout = props => {
                     <div className="sB__each-bar">
                         <div className="sB__bar"></div>
                         <div className={`sB_circle ${selectedVehicle !== "" ? "complete" : ""}`}>
-                            <div className={`sB_innerCircle ${selectedVehicle !== "" ? "complete" : ""}`} ></div>
+                            <div className={`sB_innerCircle ${selectedVehicle !== "" ? "complete" : ""}`} >
+                                {selectedVehicle !== "" && 
+                                    <FontAwesomeIcon icon={faCheck} />
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -44,7 +48,11 @@ const Checkout = props => {
                     <div className="sB__each-bar">
                         <div className="sB__bar"></div>
                         <div className={`sB_circle ${services[0]?.serviceName !== "" ? "complete" : ""}`}>
-                            <div className={`sB_innerCircle ${services[0]?.serviceName !== "" ? "complete" : ""}`} ></div>
+                            <div className={`sB_innerCircle ${services[0]?.serviceName !== "" ? "complete" : ""}`} >
+                                {selectedVehicle !== "" && 
+                                    <FontAwesomeIcon icon={faCheck} />
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>

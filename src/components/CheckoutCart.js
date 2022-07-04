@@ -2,6 +2,7 @@ import { faPencil, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { memo, useCallback, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import { addToCard } from '../Redux/action';
 import Button from './Button';
 import { findTotalAmount } from './helpingFunctions';
@@ -18,15 +19,11 @@ const CheckoutCart = props => {
 
     const dispatch = useDispatch()
 
-    const goToServices = useCallback(() => {
-        //go to service 
-    },[])
-
-    const handleDelete = useCallback((index) => {
+    const handleDelete = (index) => {
         let allServices = [...selectedServices]
         allServices.splice(index, 1)
         dispatch(addToCard(allServices))
-    },[selectedServices])
+    }
 
     return (
         <div className='checkout_cart'>
@@ -58,7 +55,9 @@ const CheckoutCart = props => {
                 :
                     <div className='no_service' >
                         <div className='noService__text'>Please add service to your cart.</div>
-                        <Button label="Go to Services" handleMe={goToServices} className="gotoService" />
+                        <NavLink to="/services" activeClassName="active">
+                            <Button label="Go to Services" className="gotoService" />
+                        </NavLink>
                     </div>
                 }
             </div>
