@@ -150,6 +150,14 @@ box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3), 0 1px 3px 1px rgba(65, 69, 73, 0.
     left: 2px;
 } */
 
+.sB_innerCircle.complete svg {
+    position: absolute;
+    top: 2px;
+    left: 2.5px;
+    font-size: 10px;
+    color: #fff;
+}
+
 .checkout_main {
     padding: 40px 50px;
     display: flex;
@@ -398,4 +406,239 @@ button.btn-default {
     font-size: 16px;
     line-height: 16px;
     color: #000;
+}
+
+.services_container {
+    padding: 30px 50px;
+}
+
+.services_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.servicesHeader_services {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    margin: 0 12px;
+}
+
+.servicesHeader_icon {
+    margin-bottom: 12px;
+}
+
+.servicesHeaderServices_each {
+    margin-left: 12px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    padding: 8px 12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000;
+    margin-bottom: 12px;
+}
+
+.servicesHeaderServices_each.selected {
+    background-color: #000;
+    color: #fff;
+}
+
+.serviceType_container {
+    margin-top: 24px;
+}
+
+.sT_title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000;
+}
+
+.sT_sericeCardContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.eachServiceCard {
+    margin-top: 28px;
+    background-color: #fff;
+    padding: 30px 50px;
+    border-radius: 16px;
+    width: 46%;
+    transition: width 0.25s linear;
+}
+
+.eachServiceCard.moreWidth {
+    width: 90%;
+}
+
+.eSC_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.eSCTopRight_title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000;
+}
+
+.eSCTopRight_otherInfo {
+    margin-top: 18px;
+}
+
+.eSCTROtherInfo_each {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.eSCTROtherInfo_each_circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    background-color: #12C26A;
+    color: #fff;
+    position: relative;
+}
+
+.eSCTROtherInfo_each_circle svg {
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    font-size: 10px;
+}
+
+.eSCTROtherInfo_each_text {
+    margin-left: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000;
+}
+
+.eSC_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.eSCB_amount {
+    text-align: center;
+    width: calc(50% - 16px);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+}
+
+.eSCTop__left {
+    width: calc(50% - 16px);
+}
+
+.eSCTop__left img {
+    width: 100%;
+    height: 220px;
+}
+
+.eSCTop__right {
+    width: calc(50% - 36px);
+    margin-left: 20px;
+}
+
+.doc_button.add_to_cart {
+    width: calc(50% - 36px);
+    margin-left: 20px;
+    margin-top: 0;
+}
+
+.serviceAdded_text {
+    width: calc(50% - 36px);
+    margin-left: 20px;
+    color: #8173C9;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.servicesContainer_body {
+    display: flex;
+}
+
+.servicesContainer_left {
+    width: 100%;
+    transition: width 0.25s linear;
+}
+
+.servicesContainer_left.lessWidth {
+    width: calc(84% - 62px);
+}
+
+.selectedServicesCart_container {
+    width: 0;
+    opacity: 0;
+    transition: all 0.25s linear;
+}
+
+.selectedServicesCart_container.moreWidth {
+    margin-top: 24px;
+    width: 16%;
+    margin-left: 36px;
+    position: fixed;
+    right: 50px;
+    opacity: 1;
+}
+
+.selectedService_amount {
+    margin-top: 8px;
+}
+
+.selectedServicesCart_title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000;
+}
+
+.selectedServices_card {
+    margin-top: 28px;
+}
+
+.selectedService_card {
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.selectedService_title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000;
+}
+
+.selectedServices_totalAmount span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000;
+}
+
+.selectedServicesCart_container.moreWidth a{
+    width: 90px;
 }

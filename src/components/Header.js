@@ -2,6 +2,7 @@ import React from 'react';
 import Image from '.././Images/logo.png';
 import {Navbar,Nav} from 'react-bootstrap';
 import  {NavLink} from 'react-router-dom';
+import cartImage from '../Images/cart.png';
 
 
 
@@ -16,11 +17,18 @@ return (
       <Nav className="ml-auto"  >
         <NavLink to="/" id="element" exact activeClassName="navbar__link--active"   >Home</NavLink>
         <NavLink to="/services" id="element" exact activeClassName="navbar__link--active"  >Services</NavLink>
-        <NavLink to="/checkout" id="element" exact activeClassName="navbar__link--active"  >About Us</NavLink>
+        <NavLink to="/aboutUs" id="element" exact activeClassName="navbar__link--active"  >About Us</NavLink>
         <NavLink to="/contact" id="element" activeClassName="navbar__link--active">Contact</NavLink>
       </Nav>
       <Nav className="ml-auto"  >
-        <NavLink to="/login" id="element"  activeClassName="navbar__link--active">Login</NavLink>
+        <NavLink to="/checkout" id="element"  activeClassName="navbar__link--active">
+          <div className='navicon'>
+            <img src={cartImage} alt="cart-image" />
+          </div>
+          <div className='navText'>
+            Cart
+          </div>
+        </NavLink>
       </Nav>
     </Navbar.Collapse>
   </Navbar> 

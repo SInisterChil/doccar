@@ -13,3 +13,16 @@ export const findTotalAmount = () => {
 
     return totalAmount;
 }
+
+export const isServiceAdded = id => {
+    let services = [...JSON.parse(store.getState().checkoutReducer._services)]
+    let found = false;
+    for(let i=0; i < services.length; i++){
+        if(services[i].id === id){
+            found = true;
+            break;
+        }
+    }
+
+    return found;
+}

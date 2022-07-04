@@ -1,17 +1,34 @@
-import React, { memo, useCallback, useState } from 'react'
+import React, { memo, useCallback, useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { setPhone } from '../Redux/action'
 import Button from './Button'
 import { onlyNumbers } from './helpingFunctions'
 
 const CheckoutContact = props => {
 
-    const [phone, setPhone] = useState("")
+    const [number, setNumber] = useState("")
 
-    const handleChange = useCallback((e) => {
+    const {contact} = useSelector((store) => ({
+        contact : store.checkoutReducer._contactNumber
+    }))
+
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        if(contact){
+            setNumber(contact)
+        }
+    },[])
+
+    const handleChange = (e) => {
         let newVal = onlyNumbers(e.target.value)
         if(newVal.length < 11){
-            setPhone(newVal)
+            setNumber(newVal)
+            if(newVal.length === 10) {
+                dispatch(setPhone(newVal))
+            }
         }
-    },[phone])
+    }
 
     return (
         <div className='checkoutMainLeft-Contact'>
@@ -19,7 +36,7 @@ const CheckoutContact = props => {
                 Enter Mobile No.
             </div>
             <div className='checkoutMainContact-input'>
-                <input inputmode="numeric" name="phone" value={phone} onChange={(e) => handleChange(e)} />
+                <input inputmode="numeric" name="number" value={number} onChange={(e) => handleChange(e)} />
             </div>
         </div>
     )

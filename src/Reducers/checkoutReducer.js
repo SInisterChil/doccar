@@ -11,20 +11,7 @@ import {
             name: "Tata Nexon",
             type: "Petrol"
         },
-        _services : JSON.stringify([
-            {
-                serviceName: "Basic",
-                timeToTake: "4 Hours",
-                amount: "2000",
-                otherInfo: "After 5000kms/5 months"
-            },
-            {
-                serviceName: "Basic One",
-                timeToTake: "4 Hours",
-                amount: "3400",
-                otherInfo: "After 5000kms/5 months"
-            }
-        ]),
+        _services : JSON.stringify([]),
         _address : "",
         _contactNumber : ""
     };
